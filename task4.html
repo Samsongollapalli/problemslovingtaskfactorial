@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//     Write a program to print true if the number is unique else print 
+// false if it contains duplicates
+// input: 1211
+// output: False
+// input: 453
+// output: True
+
+num = "123"
+dul = true
+kk=0
+for(i=0;i<num.length;i++)
+{
+ count=0
+ for(j=i+1;j<num.length;j++)
+ {
+ if(num[i] == num[j])
+ {
+ count++
+ break
+ }
+ }
+ kk=kk+count
+ 
+}
+if(kk > 0)
+ {
+ dul = false;
+ }
+if(dul)
+{
+ console.log("there is no duplicate values in given number : "+num+" "+ dul)
+}
+else
+{
+ console.log("there is duplicate values in given number : "+num+" "+dul)
+}
+
+// 2) Write a program to print the below expression for the given number 
+// (Factorial)
+// input: 5
+// 5*4*3*2*1=120
+
+num = 5
+factor =1
+s = 0
+for( i = num ; i>0;i--)
+{
+ factor = factor * i
+ 
+ if(i == 1)
+ {
+ s = s + i+ "= "
+ }
+ else
+ {
+ s = s + i + "*"
+ }
+ 
+}
+console.log(" factorial "+num+" is "+s +""+factor)
+        </script>
+</body>
+</html>
